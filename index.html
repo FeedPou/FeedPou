@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pou Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-left-square">
+    <a href="https://x.com/FeedPouSOL" target="_blank">Twitter</a>
+    <p>Pou will grow at 300K market cap!</p>
+  </div>
+
+  <div class="container">
+    <div class="status-text">
+      <h1>KEEP POU FED</h1>
+      <p id="pou-status-small">Pou is hungry</p>
+      <p class="description">
+        If there are more buys than sells in the last 5 minutes, Pou is fed.
+        If there are more sells, he is hungry.
+      </p>
+    </div>
+    <div class="pou-container">
+      <img id="pou" src="baby-pou.png" alt="Pou"> <!-- Default Baby Pou -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<style>
+/* Full-page responsive background */
+/* Full-page responsive background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('pou_background.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Top-left square with links */
+.top-left-square {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.top-left-square a {
+  color: #1da1f2; /* Twitter Blue */
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.top-left-square p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Main container */
+.container {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.status-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#pou-status-small {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #f8d7da;
+}
+
+.description {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.pou-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+#pou {
+  width: 200px; /* Default Baby Pou size */
+  height: auto;
+  animation: blink 5s infinite;
+}
+
+.token-input {
+  margin-top: 20px;
+}
+
+.token-input label {
+  color: white;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.token-input input {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.token-input button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007ab8;
+}
+
+
+</style>
+</html> 
