@@ -9,7 +9,7 @@ let marketCap = 0;
 let ws;
 
 // Hardcoded token address
-const tokenAddress = '91WNez8D22NwBssQbkzjy4s2ipFrzpmn5hfvWVe2aY5p';
+const tokenAddress = 'HJReGRWuMLek19mAqByY8cHLyrJhmHSvrnS1R3zppump';
 
 // Function to update Pou's state and size
 function updatePou() {
